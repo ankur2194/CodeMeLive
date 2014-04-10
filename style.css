@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Orbitron:500);
+body {
+	margin: 0px;
+	padding: 0px;
+}
+body * {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#hdr {
+	background-color: #09F;
+}
+a {
+	text-decoration: none;
+}
+.logo {
+	font-family: 'Orbitron', sans-serif;
+	margin-left: 30px;
+	margin-right: 20px;
+	font-size: 18px;
+}
+.logo span {
+	color: white;
+}
+.tab {
+	color: white;
+	margin-left: 20px;
+}
+.tab:hover {
+	color: #CC0;
+	cursor: pointer;
+}
+#container {
+	border: solid 2px #09F;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+#container .clm {
+	width: 50%;
+}
+textarea {
+ width:100%;
+ margin:0px;
+ padding:0px;
+ border-width:0px;
+ border-right:solid 2px #09F;
+ resize:none;
+}
+#texthtml {
+	background-color: #EACFFF;
+}
+#texthtml:focus {
+	background-color: #EEE;
+}
+#textcss {
+	border-bottom: solid 2px #09F;
+	border-top: solid 2px #09F;
+	background-color: #CECFFF;
+}
+#textcss:focus {
+	background-color: #EEE;
+}
+#textjs {
+	background-color: #F5F5CC;
+}
+#textjs:focus {
+	background-color: #EEE;
+}
+.tag {
+	width: 80px;
+	text-align: center;
+	background-color: #09F;
+	color: white;
+	position: absolute;
+	right: 50%;
+}
+.clm .hidh {
+	display: block;
+}
+.clm .hidc {
+	display: block;
+}
+.clm .hidj {
+	display: block;
+}
+#textjs:focus .hidh {
+	display: none;
+}
