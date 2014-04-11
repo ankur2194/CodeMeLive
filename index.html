@@ -12,102 +12,6 @@
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <script type="text/javascript">
-      function generateop()
-{
-	var iFrame = $("<iframe id=\"opframe\" width=\"100%\" height=\""+$(".clm").height()+"\" frameborder=\"0\"></iframe>");
-	$('#op').html(iFrame);
-	var iFrameDoc = iFrame[0].contentDocument || iFrame[0].contentWindow.document;
-	iFrameDoc.write("<html><head><style type=\"text/css\">"+ document.getElementById("textcss").value +"</style><script type=\"text/javascript\">"+ document.getElementById("textjs").value +"</script></head><body>"+ document.getElementById("texthtml").value +"</body></html>");
-	iFrameDoc.close();
-}
-    </script>
-    <style type="text/css">
-#hdr {
-	background-color: #09F;
-}
-a {
-	text-decoration: none;
-}
-.logo {
-	font-family: 'Orbitron', sans-serif;
-	margin-left: 30px;
-	margin-right: 20px;
-	font-size: 18px;
-}
-.logo span {
-	color: white;
-}
-.tab {
-	color: white;
-	margin-left: 20px;
-}
-.tab:hover {
-	color: #CC0;
-	cursor: pointer;
-}
-#container {
-	border: solid 2px #09F;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	justify-content: space-around;
-}
-#container .clm {
-	width: 50%;
-}
-textarea {
- width:100%;
- margin:0px;
- padding:0px;
- border-width:0px;
- border-right:solid 2px #09F;
- resize:none;
-}
-#texthtml {
-	background-color: #EACFFF;
-}
-#texthtml:focus {
-	background-color: #EEE;
-}
-#textcss {
-	border-bottom: solid 2px #09F;
-	border-top: solid 2px #09F;
-	background-color: #CECFFF;
-}
-#textcss:focus {
-	background-color: #EEE;
-}
-#textjs {
-	background-color: #F5F5CC;
-}
-#textjs:focus {
-	background-color: #EEE;
-}
-.tag {
-	width: 80px;
-	text-align: center;
-	background-color: #09F;
-	color: white;
-	position: absolute;
-	right: 50%;
-}
-.clm .hidh {
-	display: block;
-}
-.clm .hidc {
-	display: block;
-}
-.clm .hidj {
-	display: block;
-}
-#textjs:focus .hidh {
-	display: none;
-}
-    </style>
 
   </head>
   <body>
@@ -148,26 +52,6 @@ textarea {
 <a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h1>
 
 <p>Here a demo is available.</p>
-<div>
-  <div id="hdr">
-<a class="logo" href="#"><span>Code</span> <span>Me</span> <span>Live</span></a><a class="tab" onclick="document.getElementById('texthtml').focus()">HTML</a><a class="tab" onclick="document.getElementById('textcss').focus()">CSS</a><a class="tab" onclick="document.getElementById('textjs').focus()">JS</a><a class="tab" target="_blank" href="#"><img src="new_window_icon.gif" /></a>
-</div>
-<div id="container">
-<div class="clm">
-<span class="tag hidh">HTML</span>
-<textarea id="texthtml" onkeyup="generateop()"></textarea>
-<span class="tag hidc">CSS</span>
-<textarea id="textcss" onkeyup="generateop()"></textarea>
-<span class="tag hidj">JS</span>
-<textarea id="textjs" onkeyup="generateop()"></textarea>
-</div>
-<div class="clm">
-<input type="hidden" id="heights" value="400" />
-<div id="op">
-</div>
-</div>
-</div>
-</div>
 
 <h1>
 <a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h1>
